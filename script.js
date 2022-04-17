@@ -5,15 +5,25 @@ const arrThird = [
     },{
         name: 'shyam',
         age: 23
+    },
+    {
+        name: 'bikash',
+        age: 24
     }
 ]
 
-const list = arrThird.map((i) => {
-    return i.name;
-});
-console.log(list);
+// const list = arrThird.map((i) => {
+//     return i.name;//     return i.name;
 
-const ageList = arrThird.map((i)=>{
-    return i.age;
+// });
+// console.log(list);
+
+// const ageList = arrThird.map((i)=>{
+//     return i.age;
+// });
+// console.log(ageList);
+
+const filterArray = arrThird.filter(function (el, i, arr){
+    return el.age==='23';
 });
-console.log(ageList);
+console.log(filterArray);
